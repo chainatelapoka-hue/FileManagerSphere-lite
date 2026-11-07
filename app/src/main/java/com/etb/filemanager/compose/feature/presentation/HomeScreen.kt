@@ -11,7 +11,6 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.material3.Scaffold
 import androidx.navigation.compose.rememberNavController
-import com.etb.filemanager.compose.core.navigation.ChatRoute
 import com.etb.filemanager.compose.core.navigation.NavigationComp
 import com.etb.filemanager.compose.feature.provider.BaseScreen
 import com.etb.filemanager.files.extensions.parcelable
@@ -28,7 +27,7 @@ class HomeScreen : BaseScreen() {
         val bundle = intent.extras
         val startDestination = intent.getStringExtra("startDestination")!!
 
-        if (startDestination != ChatRoute && bundle != null){
+        if (bundle != null) {
             categoryFileModel = bundle.parcelable("categoryFileModel")
         }
 

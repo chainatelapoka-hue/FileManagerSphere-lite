@@ -197,15 +197,13 @@ dependencies {
     //Baseline Profile
     baselineProfile(project(":app:benchmark"))
 
-    //GenerativeAI
-    implementation("com.google.ai.client.generativeai:generativeai:0.1.2")
+
 
     //Kotlin serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
 
     //Ruan625Br
     implementation("com.github.Ruan625Br:FilePickerSphere:1.0.0")
-    implementation("com.github.Ruan625Br:AIResponseMatcher:4904b50758")
 }
 
 

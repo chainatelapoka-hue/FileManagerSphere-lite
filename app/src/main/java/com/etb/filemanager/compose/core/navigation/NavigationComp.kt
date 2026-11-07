@@ -36,9 +36,5 @@ fun NavigationComp(
         mediaViewScreen(
             paddingValues = paddingValues
         )
-
-        chatScreen(
-            paddingValues = paddingValues
-        )
     }
 }

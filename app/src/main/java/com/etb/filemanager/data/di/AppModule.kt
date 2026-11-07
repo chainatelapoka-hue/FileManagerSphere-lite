@@ -9,16 +9,11 @@ package com.etb.filemanager.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.etb.filemanager.BuildConfig
-import com.etb.filemanager.compose.core.presentation.util.Prompt
 import com.etb.filemanager.data.datasource.AppDatabase
 import com.etb.filemanager.data.datasource.AppMigrations
 import com.etb.filemanager.data.datasource.ChatDao
 import com.etb.filemanager.data.repository.ChatRepository
 import com.etb.filemanager.data.repository.ChatRepositoryImpl
-import com.google.ai.client.generativeai.Chat
-import com.google.ai.client.generativeai.GenerativeModel
-import com.google.ai.client.generativeai.type.content
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -48,39 +43,5 @@ object AppModule {
     @Singleton
     fun provideChatRepository(chatDao: ChatDao): ChatRepository {
         return ChatRepositoryImpl(chatDao)
-    }
-
-    @Provides
-    @Singleton
-    fun provideGenerativeModel(): GenerativeModel {
-        return GenerativeModel(
-            modelName = "gemini-pro", apiKey = BuildConfig.apiKey
-        )
-    }
-
-    @Provides
-    @Singleton
-    fun provideChat(generativeModel: GenerativeModel): Chat {
-        val chat = generativeModel.startChat(
-            history = listOf(content(
-                role = "user"
-            ) {
-                text(Prompt.FILE_OPERATIONS)
-            }, content(
-                role = "model"
-            ) {
-                text(Prompt.FILE_OPERATIONS_MODEL)
-            }, content(
-                role = "user"
-            ) {
-                text(Prompt.FILE_OPERATIONS_EXAMPLE)
-            }, content(
-                role = "model",
-            ) {
-                text(Prompt.FILE_OPERATIONS_EXAMPLE_MODEL)
-            })
-        )
-
-        return chat
     }
 }
