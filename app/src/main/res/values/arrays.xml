@@ -1,0 +1,97 @@
+<resources>
+    <!-- Themes Preference -->
+    <string-array name="themes_entries">
+        <item>@string/follow_the_system</item>
+        <item>@string/light_theme</item>
+        <item>@string/dark_theme</item>
+        <item>@string/pink_theme</item>
+        <item>@string/green_theme_light_mode</item>
+        <item>@string/green_theme_dark_mode</item>
+        <item>@string/blue_theme_light_mode</item>
+        <item>@string/blue_theme_dark_mode</item>
+        <item>@string/red_theme_light_mode</item>
+        <item>@string/red_theme_dark_mode</item>
+        <item>@string/dynamic_colors</item>
+    </string-array>
+
+    <string-array name="themes_values">
+        <item>FOLLOW_SYSTEM</item>
+        <item>LIGHT_THEME</item>
+        <item>DARK_THEME</item>
+        <item>PINK_THEME</item>
+        <item>GREEN_THEME_LIGHT</item>
+        <item>GREEN_THEME_DARK</item>
+        <item>BLUE_THEME_LIGHT</item>
+        <item>BLUE_THEME_DARK</item>
+        <item>RED_THEME_LIGHT</item>
+        <item>RED_THEME_DARK</item>
+        <item>DYNAMIC_COLORS</item>
+    </string-array>
+
+    <!--Interface-->
+
+    <string-array name="view_file_information_entries">
+        <item>@string/display_date_only</item>
+        <item>@string/display_size_only</item>
+        <item>@string/display_name_only</item>
+        <item>@string/display_everything</item>
+    </string-array>
+    <string-array name="view_file_information_values">
+        <item>DATE_ONLY</item>
+        <item>SIZE_ONLY</item>
+        <item>NAME_ONLY</item>
+        <item>EVERYTHING</item>
+    </string-array>
+
+    <string-array name="selected_file_background_opacity_entries">
+        <item>@string/opacity_6_percent</item>
+        <item>@string/opacity_12_percent</item>
+        <item>@string/opacity_24_percent</item>
+        <item>@string/opacity_48_percent</item>
+        <item>@string/opacity_96_percent</item>
+    </string-array>
+    <string-array name="selected_file_background_opacity_values">
+        <item>0.06</item>
+        <item>0.12</item>
+        <item>0.24</item>
+        <item>0.48</item>
+        <item>0.96</item>
+    </string-array>
+
+    <string-array name="file_list_margins_entries">
+        <item>2dp</item>
+        <item>4dp</item>
+        <item>8dp</item>
+        <item>16dp</item>
+    </string-array>
+    <string-array name="file_list_margins_values">
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+    </string-array>
+
+
+    <string-array name="corner_family_entries">
+        <item>@string/corner_family_rounded</item>
+        <item>@string/corner_family_cut</item>
+        <item>@string/corner_family_rounded_top_right</item>
+        <item>@string/corner_family_rounded_top_right_bottom_left</item>
+        <item>@string/corner_family_cut_top_right_bottom_left</item>
+        <item>@string/corner_family_cut_top_right</item>
+        <item>@string/corner_family_cut_top_left</item>
+        <item>@string/corner_family_rounded_top_left</item>
+        <item>@string/corner_family_cut_top_right_bottom</item>
+    </string-array>
+
+
+    <string-array name="menu_type_items">
+        <item>.zip</item>
+        <item>.7z</item>
+        <item>.tar</item>
+        <item>.tar.xz</item>
+        <item>.tar.gz</item>
+        <item>.tar.zst</item>
+    </string-array>
+
+</resources>

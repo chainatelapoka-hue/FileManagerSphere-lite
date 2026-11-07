@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+            app:key="default_folder"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_behavior_default_folder_title"/>
+    <SwitchPreferenceCompat
+        app:key="select_file_long_click"
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_behavior_select_file_long_click"/>
+    <SwitchPreferenceCompat
+            app:key="@string/pref_key_show_fast_scroll"
+            app:iconSpaceReserved="false"
+            app:title="@string/pref_title_show_fast_scroll"
+            app:summary="@string/pref_summary_show_fast_scroll" />
+
+</PreferenceScreen>
